@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Registration form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>STUDENTS REGISTRATION FORM</h1>
+    <div class="form-container">
+    <form action="form.php" method="POST" autocomplete="on">
+        <div class="logo-container">
+             <img src="hat.png" alt="Company Logo" class="logo">
+             </div>
+        <table>
+            <tr>
+                <td>Names</td>
+                <td><input type="text" placeholder="names" name="name" required></td>
+            </tr>
+        
+            <tr>
+                <td>Email</td>
+                <td><input type="email" placeholder="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" placeholder="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" value="male" required> Male
+                    <input type="radio" name="gender" value="female"> female
+                </td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td><input type="number" min="1" max="100" name="age" required></td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td>
+                    <select id="country" name="country" required>
+                    <option value="Rwanda">Rwanda</option>
+                    <option value="Uganda">Uganda</option>
+                    <option value="England">England</option>
+                    <option value="France">France</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Burundi">Burundi</option>
+                    <option value="USA">USA</option>
+                    </select>
+                    </td>
+            </tr>
+            <tr>
+                <td>Phone No</td>
+                <td>
+                    <input type="number" placeholder="Phone number" name="number" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Birthday</td>
+                <td><input type="date" name="birthdate" required></td>
+            </tr>
+            <tr>
+            <td>File</td>
+            <td>
+                <input type="file" id="Letter" name="adfile" accept=".pdf,.doc,.docx,.mp4,.mkv" required></td>
+            </td>
+            </tr>
+            <tr>
+                <td>Bio</td>
+                <td><textarea id="bio" name="bio" rows="4" cols="50" maxlength="200" ></textarea></td>
+            
+            </tr>
+            <tr>
+                <td>IQ</td>
+                <td><input type="range">
+            </tr>
+            <tr>
+                <td>Color of Uniform</td>
+                <td><input type="color"></td>
+            </tr>
+            <tr>
+                
+                <td><input type="checkbox" name="subscribe" value="yes">Notification </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Submit"></td>
+               <td><input type="reset" value="Reset"></td>
+               <td><button type="button" onclick="alert('We value your privacy!')">Click</button></td>
+            </tr>
+        </table>
+    </form>
+    </div>
+</body>
+</html>
